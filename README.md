@@ -1,7 +1,7 @@
 # Jour 3
 
 ## Initiation à Flexbox
-Dans un 1er temps, on créer une boite noire (qui sera par la suite transparante, d'où le nom de "line-transparent"). Dans cette boite, on pose 3 boites ("line-hard", "line-medium" et "line-light").
+Dans un 1er temps, on créé une boite noire (qui sera par la suite transparante, d'où le nom de "line-transparent"). Dans cette boite, on pose 3 boites ("line-hard", "line-medium" et "line-light").
 
 ### Etape 0
 Voici le code html et CSS avant de faire du flebox :
