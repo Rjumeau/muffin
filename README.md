@@ -8,7 +8,7 @@ Pour commencer, on créé une boite noire (qui sera par la suite transparante, d
 ### Etape 0
 Voici le code html et CSS avant de faire du flebox :
 
-![Image A](images/imgA.png)
+![Image A](https://github.com/Joz84/day3/blob/master/images-readme/imgA.png)
 
 #### le html (l.11-15)
 ```html
