@@ -1,5 +1,9 @@
 # Jour 3
 
+
+<a href="https://joz84.github.io/day-c.github.io/" target="_blanck">Demo</a>
+
+
 ## Initiation à Flexbox
 Dans l'exemple qui va suivre nous allons créer une ligne fine (de 5px) de trois couleurs différentes qui sera située au debut et à la fin du site. Dans un 1er, pour que l'exemple soit lisible nous agrandirons les proportions des élements (50px).
 
