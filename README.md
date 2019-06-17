@@ -1,12 +1,14 @@
 # Jour 3
 
 ## Initiation à Flexbox
-Dans l'exemple qui va suivre nous allons crééer une ligne fine (de 5px) de trois couleurs différentes qui sera située au debut et à la fin du site. Dans un 1er, pour que l'exemple soit lisible nous agrandirons les proportions des élements (50px).
+Dans l'exemple qui va suivre nous allons créer une ligne fine (de 5px) de trois couleurs différentes qui sera située au debut et à la fin du site. Dans un 1er, pour que l'exemple soit lisible nous agrandirons les proportions des élements (50px).
 
 Pour commencer, on créé une boite noire (qui sera par la suite transparante, d'où le nom de "line-transparent"). Dans cette boite, on pose 3 boites de couleur différentes ("line-hard", "line-medium" et "line-light").
 
 ### Etape 0
 Voici le code html et CSS avant de faire du flebox :
+
+![Image A](images/imgA.png)
 
 #### le html (l.11-15)
 ```html
