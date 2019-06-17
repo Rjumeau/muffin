@@ -43,7 +43,7 @@ Voici le code html et CSS avant de faire du flebox :
 On obtient trois boites de tailles différentes, les unes en dessous des autes sur un fond noir.
 
 ### Etape 2
-On introduit Flexbox. Le HTML ne change pas. Seul le CSS est modifié. Tout d'abord il faut définir une boite parent. Ici la boite parente (celle qui contient les boites que l'on souhaite aligner horizontalement) et biensûr "line-transparent". Pour la définir comme boite parente au sens flexbox il faut ajouter lui ajouter la propriété "display: flex;".
+On introduit Flexbox. Le HTML ne change pas. Seul le CSS est modifié. Tout d'abord il faut définir une boite parente. Ici la boite parente (celle qui contient les boites que l'on souhaite aligner horizontalement) est biensûr "line-transparent". Pour la définir comme boite parente au sens flexbox il faut lui ajouter la propriété "display: flex;".
 
 #### le CSS
 ```css
