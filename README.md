@@ -1,7 +1,7 @@
 # Jour 3
 
 ## Initiation à Flexbox
-Dans l'exemple qui va suivre nous allons crééer une ligne fine (de 5px) de trois couleurs différentes qui sera située au debut et à la fin du site. Dans un 1er, pour que l'exemple soit lisible nous agrandirons les proportions des élements (50px).
+Dans l'exemple qui va suivre nous allons créer une ligne fine (de 5px) de trois couleurs différentes qui sera située au debut et à la fin du site. Dans un 1er, pour que l'exemple soit lisible nous agrandirons les proportions des élements (50px).
 
 Pour commencer, on créé une boite noire (qui sera par la suite transparante, d'où le nom de "line-transparent"). Dans cette boite, on pose 3 boites de couleur différentes ("line-hard", "line-medium" et "line-light").
 
@@ -44,6 +44,8 @@ Voici le code html et CSS avant de faire du flebox :
 ```
 On obtient trois boites de tailles différentes, les unes en dessous des autes sur un fond noir.
 
+![Image A](https://github.com/Joz84/day3/blob/master/images-readme/imgA.png)
+
 ### Etape 2
 On introduit Flexbox. Le HTML ne change pas. Seul le CSS est modifié. Tout d'abord il faut définir une boite parente. Ici la boite parente (celle qui contient les boites que l'on souhaite aligner horizontalement) est biensûr "line-transparent". Pour la définir comme boite parente au sens flexbox il faut lui ajouter la propriété "display: flex;".
 
@@ -55,6 +57,8 @@ On introduit Flexbox. Le HTML ne change pas. Seul le CSS est modifié. Tout d'ab
   display: flex;
 }
 ```
+
+![Image B](https://github.com/Joz84/day3/blob/master/images-readme/imgB.png)
 
 ### Etape 3
 Pour choisir le type d'alignement horizontal, on utilise la propriété "justify-content" toujours sur la boite parente. Dans l'exemple nous avons choisi la proriété "justify-content: space-between;" mais ils en existent d'autres. Nous les verrons par la suite.
@@ -69,6 +73,8 @@ Pour choisir le type d'alignement horizontal, on utilise la propriété "justify
 }
 ```
 
+![Image C](https://github.com/Joz84/day3/blob/master/images-readme/imgC.png)
+
 ### Etape 4
 On peut également choisir la disposition verticale. Pour cela on utilise la propriété "align-items". Dans l'exemple nous avons choisi "align-items: center;", mais ils en existent d'autres. Nous les verons également par la suite.
 
@@ -82,6 +88,8 @@ On peut également choisir la disposition verticale. Pour cela on utilise la pro
   align-items: center;
 }
 ```
+
+![Image D](https://github.com/Joz84/day3/blob/master/images-readme/imgD.png)
 
 Ca y est l'initiation flexbox est terminée, l'étape suivante est juste là pour ajuster visuellement le rendu final. 
 
