@@ -129,7 +129,9 @@ Afin d'avoir un rendu sous forme de ligne que nous poserons en dessus de la barr
 
 
 ## Le composant Navbar
-(Schema de conception vue en cours)
+Voici le schema de conception de la navbar
+
+![Image Navbar](https://github.com/Joz84/day3/blob/master/images-readme/navbar.png)
 
 ### le html (l.17-24)
 ```html
