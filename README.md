@@ -1,7 +1,9 @@
 # Jour 3
 
 ## Initiation à Flexbox
-Dans un 1er temps, on créé une boite noire (qui sera par la suite transparante, d'où le nom de "line-transparent"). Dans cette boite, on pose 3 boites ("line-hard", "line-medium" et "line-light").
+Dans l'exemple qui va suivre nous allons crééer une ligne fine (de 5px) de trois couleurs différentes qui sera située au debut et à la fin du site. Dans un 1er, pour que l'exemple soit lisible nous agrandirons les proportions des élements (50px).
+
+Pour commencer, on créé une boite noire (qui sera par la suite transparante, d'où le nom de "line-transparent"). Dans cette boite, on pose 3 boites de couleur différentes ("line-hard", "line-medium" et "line-light").
 
 ### Etape 0
 Voici le code html et CSS avant de faire du flebox :
@@ -55,11 +57,12 @@ On introduit Flexbox. Le HTML ne change pas. Seul le CSS est modifié. Tout d'ab
 ```
 
 ### Etape 3
-Pour choisir le type d'alignement horizontal, on utilise la propriété "justify-content" toujour sur la boite parent. Dans l'exemple nous avons choisi la proriété "justify-content: space-between;" mais ils en existent d'autres. Nous les verons par la suite.
+Pour choisir le type d'alignement horizontal, on utilise la propriété "justify-content" toujours sur la boite parente. Dans l'exemple nous avons choisi la proriété "justify-content: space-between;" mais ils en existent d'autres. Nous les verrons par la suite.
 
-#### le CSS (l.99-121)
+#### le CSS
 ```css
 .line-transparent {
+  background: black;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -67,14 +70,31 @@ Pour choisir le type d'alignement horizontal, on utilise la propriété "justify
 ```
 
 ### Etape 4
-On peut également choisir la disposition verticale. Pour cela on utilise la propriété "align-items". Dans l'exemple nous avons choisi "align-items: center", mais ils en existent d'autres. Nous les verons par la suite.
+On peut également choisir la disposition verticale. Pour cela on utilise la propriété "align-items". Dans l'exemple nous avons choisi "align-items: center;", mais ils en existent d'autres. Nous les verons également par la suite.
 
-### le CSS (l.99-121)
+#### le CSS
+```css
+.line-transparent {
+  background: black;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+```
+
+Ca y est l'initiation flexbox est terminée, l'étape suivante est juste là pour ajuster visuellement le rendu final. 
+
+### Etape 5
+Afin d'avoir un rendu sous forme de ligne que nous poserons en dessus de la barre de navigation (navbar), nous allons rendre le fond transparent et réduire l'épaisseur des boites enfants.
+
+#### le CSS (l.99-121)
 ```css
 .line-transparent {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .line-light {
@@ -95,8 +115,6 @@ On peut également choisir la disposition verticale. Pour cela on utilise la pro
   background: #9F3442;
 }
 ```
-
-
 
 ## <a href="https://flexboxfroggy.com/#fr" target="_blanck">Flexbox Froggy</a>
 <a href="https://flexboxfroggy.com/#fr" target="_blanck">Flexbox Froggy</a> est un jeu en ligne permettant de s'exercer aux propiétés flexbox.
