@@ -1,7 +1,7 @@
 # Jour 3
 
 
-## <a href="https://joz84.github.io/day-c.github.io/" target="_blanck">Demo</a>
+## Lien vers la <a href="https://joz84.github.io/day-c.github.io/" target="_blanck">demo</a>
 
 
 ## Initiation à Flexbox
