@@ -146,4 +146,12 @@ p, ul, ol {
   width: 1000px;
 }
 
+.production {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 3px;
+  box-shadow: 2px 2px 10px grey;
+  margin: 10px;
+}
 
