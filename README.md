@@ -1,7 +1,8 @@
 # Jour 3
 
+### <a href="https://github.com/Joz84/ten-hours-of-html-css" target="_blank">Retour au menu principal</a>
 
-## Lien vers la <a href="https://joz84.github.io/day-c.github.io/" target="_blanck">demo</a>
+## Lien vers la <a href="https://joz84.github.io/day-c.github.io/" target="_blanck">démo</a>
 
 
 ## Initiation à Flexbox
