@@ -1,5 +1,6 @@
 
 ## Jour 4 - Récapitulatif
+## [Lien vers la démo](https://rjumeau.github.io/muffin/)
 Le but de cette matinée est de revoir les différents concepts abordés durant les dernières semaines. Pour cela, nous allons reprendre l'exemple d'une page sur une enseigne de Brownie.
 #### Important ! Cette page nous servira d'exemple pour les prochaines semaines, il faudra donc la conserver
 
