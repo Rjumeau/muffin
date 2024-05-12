@@ -69,14 +69,14 @@ body {
 ```
 
 ## Composant Section
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/Rjumeau/muffin/blob/master/images-readme/section-muffin.png)
 
 
 
 
 
 
-La page est scindée en plusieurs blocs. On aimerait que ces blocs aient le même style. Pour cela, on va créer un nouveau composant nommé "banner". Ce fichier sera responsable de conserver le style pour toutes les sections de notre page, voir de notre site si nous faisons plusieurs pages.
+La page est scindée en plusieurs blocs. On aimerait que ces blocs aient le même style. Pour cela, on va créer un nouveau composant nommé "section". Ce fichier sera responsable de conserver le style pour toutes les sections de notre page, voir de notre site si nous faisons plusieurs pages.
 
 - Dans le dossier components, créer un fichier section.css
 - Dans le fichier index.html, appliquez la classe "section" aux éléments souhaités
@@ -101,7 +101,7 @@ La page est scindée en plusieurs blocs. On aimerait que ces blocs aient le mêm
 
 ## Composant Picture
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/Rjumeau/muffin/blob/master/images-readme/main-muffin.png)
 
 Nous aurons besoin de designer des images sur notre page (image principale, logo). Pour cela, on va donc créer un nouveau composant.
 
@@ -126,7 +126,7 @@ Nous aurons besoin de designer des images sur notre page (image principale, logo
 
 ```
 ## Composant Button
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/Rjumeau/muffin/blob/master/images-readme/button-muffin.png)
 
 Nous aurons besoin de designer des boutons sur notre page afin de modéliser les liens. Pour cela, on va donc créer un nouveau composant.
 
@@ -154,6 +154,7 @@ Nous aurons besoin de designer des boutons sur notre page afin de modéliser les
 @import url(components/button.css);
 ```
 ## Composant Navbar
+![App Screenshot](https://github.com/Rjumeau/muffin/blob/master/images-readme/navbar.png)
 
 La navbar (barre de navigation) permet à l'utilisateur de naviguer facilement sur le site web via des liens. On retrouve généralement le logo.
 
