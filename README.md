@@ -61,7 +61,7 @@ Voici un exemple d'utilisation pour changer la couleur d'arrière plan de notre 
 
 ```css
 body {
-	background: #ee9ca7;
+    background: #ee9ca7;
     background: -webkit-linear-gradient(to right, #ffdde1,      #ee9ca7);
     background: linear-gradient(to right, #ffdde1, #ee9ca7);
 }
@@ -84,10 +84,10 @@ La page est scindée en plusieurs blocs. On aimerait que ces blocs aient le mêm
 
 ```css
 .section {
-	background: #E2F2DC; // applique une couleur au background de la section
-	padding: 20px 50px; // espace intérieur (20px vertical / 50px horizontal)
-	margin: 10px 100px; // espace extérieur (10px vertical, 100px horizontal)
-	border: 3px solid #C0E6B6; // applique une bordure visible (solid) de 3px avec une couleur
+  background: #E2F2DC; // applique une couleur au background de la section
+  padding: 20px 50px; // espace intérieur (20px vertical / 50px horizontal)
+  margin: 10px 100px; // espace extérieur (10px vertical, 100px horizontal)
+  border: 3px solid #C0E6B6; // applique une bordure visible (solid) de 3px avec une couleur
 }
 
 ```
@@ -106,12 +106,12 @@ La page est scindée en plusieurs blocs. On aimerait que ces blocs aient le mêm
 Nous aurons besoin de designer des images sur notre page (image principale, logo). Pour cela, on va donc créer un nouveau composant.
 
 - Créer un fichier picture.css dans le dossier components
-- Appliquer une classe "main-brownie" à l'image
-- Appeler le sélecteur .main-brownie dans le fichier button.css
+- Appliquer une classe "main-picture" à l'image
+- Appeler le sélecteur .main-picture dans le fichier picture.css
 - Appliquez du style à l'image, ex : 
 
 ```css
-.main-brownie {
+.main-picture {
   border-radius: 50%; // transforme l'image en cercle
   margin-bottom: 20px; // ajoute une marge extérieure vers le bas de l'image
 }
@@ -137,12 +137,12 @@ Nous aurons besoin de designer des boutons sur notre page afin de modéliser les
 
 ```css
 .btn-primary {
-	background: #CE8087;
-	padding: 15px 15px;
-	color: white;
-	font-weight: bold;
-	text-decoration: none;
-	border-radius: 5px;
+  background: #CE8087;
+  padding: 15px 15px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
 ```
@@ -181,21 +181,21 @@ Pour styliser ces éléments, il faut créer un nouveau composant.
 
 ```css
 .navbar {
-	background-color: #E2F2DC; // ajoute une couleur à la navbar
-	display: flex; // rend la div flexible pour disposer les enfants de celle-ci
-	justify-content: space-between; // dispose les éléments enfants à l'opposé sur l'axe horizontal
-	padding: 5px 20px; // ajoute une marge intérieure
+  background-color: #E2F2DC; // ajoute une couleur à la navbar
+  display: flex; // rend la div flexible pour disposer les enfants de celle-ci
+  justify-content: space-between; // dispose les éléments enfants à l'opposé sur l'axe horizontal
+  padding: 5px 20px; // ajoute une marge intérieure
 }
 
 .navbar-links {
-	display: flex; // rend la div contenant les liens flexible
-	align-items: center; // permet de centrer les éléments enfants (les liens) sur l'axe verticale
-	gap: 20px; // ajoute un espace entre ces liens
+  display: flex; // rend la div contenant les liens flexible
+  align-items: center; // permet de centrer les éléments enfants (les liens) sur l'axe verticale
+  gap: 20px; // ajoute un espace entre ces liens
 }
 
 .navbar-link {
-	color: #9F3442; // change la couleur du texte du lien
-	text-decoration: none; 
+  color: #9F3442; // change la couleur du texte du lien
+  text-decoration: none; 
 }
 ```
 
