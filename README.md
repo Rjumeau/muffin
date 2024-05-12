@@ -9,10 +9,7 @@ Le but de cette matinée est de revoir les différents concepts abordés durant 
 ### Avant de démarrer
 Nous allons récupérer la structure HTML de la page réalisée lors du premier cours. Pour cela il faudra : 
 
-```bash
-  npm install my-project
-  cd my-project
-```
+[Télécharger le dossier muffin](https://github.com/Rjumeau/muffin/blob/master/muffin.zip)
     
 ## Choisir une police
 Pour utiliser une nouvelle police sur la page, voici la procédure : 
