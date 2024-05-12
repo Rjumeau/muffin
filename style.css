@@ -1,0 +1,32 @@
+@import url(components/section.css);
+@import url(components/button.css);
+@import url(components/picture.css);
+@import url(components/navbar.css);
+
+body {
+	margin: 0;
+	font-family: arial;
+	background: #ee9ca7;
+  background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);
+  background: linear-gradient(to right, #ffdde1, #ee9ca7);
+}
+
+
+h1, h2, h3, h4 {
+	font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #448C2E;
+}
+
+h3 {
+	font-size: 21px;
+}
+
+p {
+	font-family: Arial, sans-serif;
+}
+
+.text-center {
+	text-align: center;
+}
