@@ -5,6 +5,7 @@ Nous allons améliorer notre recette de brownie en ajoutant un composant card qu
 
 Pour se faire, il faudra repartir de notre code de la dernière fois.
 
+Sinon, voici [le dossier à télécharger](https://github.com/Rjumeau/muffin/blob/muffin-cards/muffin-without-card.zip)
 
 
 ## La structure HTML d'une Card
