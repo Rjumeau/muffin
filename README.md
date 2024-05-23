@@ -132,3 +132,6 @@ Et le CSS :
   justify-content: space-around;
 }
 ```
+## La checklist pour le début des projets
+
+[Checklist](https://docs.google.com/spreadsheets/d/1wh6dVkrdQ3tYMyEV4-WfOaJRsLrCZjdpYyDVmWqNCaQ/edit#gid=0)
