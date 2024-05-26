@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <title>Muffins</title>
+  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
 </head>
+
 <body>
   <!-- Todo : Navbar -->
   <div class="navbar">
-    <img src="images/logo.png" alt="logo" width=50 height=50>
+    <img src="images/logo.png" alt="Logo" width="50" height="50">
     <div class="navbar-links">
       <a href="#" class="navbar-link">À propos</a>
-      <a href="#" class="navbar-link">Nous contacter</a>
+      <a href="#" class="navbar-link">Contact</a>
     </div>
   </div>
 
@@ -23,21 +27,46 @@
     <h2>Fondants et croustillants</h2>
     <img src="images/muffin.jpg" width=300 height=300 alt="muffin" class="main-picture">
     <br>
-    <a href="https://www.marmiton.org/recettes/recette_muffins-tres-simples_166385.aspx" class='btn-primary' target="_blank">En savoir plus</a>
+    <a href="https://www.marmiton.org/recettes/recette_muffins-tres-simples_166385.aspx" target="_blank"
+      class="btn-primary">En savoir plus</a>
   </div>
 
   <div class="section">
     <h3>Présentation</h3>
-    <p><strong>Les muffins</strong> sont de petits gâteaux individuels s'apparentant aux madeleines. Apparus au pays de Galles aux alentours du XIe siècle, ils sont très répandus dans les pays anglo-saxons, principalement aux États-Unis. Le principe caractéristique de fabrication des muffins consiste à préparer le mélange des ingrédients liquides et celui des ingrédients secs séparément, puis à mélanger rapidement et <i>grossièrement</i> les deux préparations. Contrairement aux cupcakes, les muffins n’ont jamais de glaçage.
-    <br>
-    Les muffins sont traditionnellement sucrés. On peut les retrouver au chocolat (avec des pépites de chocolat) ou nature, mais il existe de nombreuses autres variétés : fraise, banane, framboise, orange, vanille, myrtille ou bleuets, etc.
-    <br>
-    Il existe également des muffins salés, les English muffins ou muffins anglais, ressemblant à des sortes de petites crêpes très épaisses, faits à partir de pâte levée. Ces muffins salés sont quelquefois faits avec de la farine complète. Ils sont notamment employés comme base de la préparation des "œufs Bénédicte".</p>
+    <p><strong>Les muffins</strong> sont de petits gâteaux individuels s'apparentant aux madeleines. Apparus au pays de
+      Galles aux alentours du XIe siècle, ils sont très répandus dans les pays anglo-saxons, principalement aux
+      États-Unis. Le principe caractéristique de fabrication des muffins consiste à préparer le mélange des ingrédients
+      liquides et celui des ingrédients secs séparément, puis à mélanger rapidement et <i>grossièrement</i> les deux
+      préparations. Contrairement aux cupcakes, les muffins n’ont jamais de glaçage.
+      <br>
+      Les muffins sont traditionnellement sucrés. On peut les retrouver au chocolat (avec des pépites de chocolat) ou
+      nature, mais il existe de nombreuses autres variétés : fraise, banane, framboise, orange, vanille, myrtille ou
+      bleuets, etc.
+      <br>
+      Il existe également des muffins salés, les English muffins ou muffins anglais, ressemblant à des sortes de petites
+      crêpes très épaisses, faits à partir de pâte levée. Ces muffins salés sont quelquefois faits avec de la farine
+      complète. Ils sont notamment employés comme base de la préparation des "œufs Bénédicte".
+    </p>
+  </div>
+
+
+  <!-- Todo : Intégrer une vidéo Youtube -->
+  <div class="section flex-center">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7xyxYLdlsEo?si=TBGi10JsPCDCSkHt"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
   </div>
 
   <div>
     <div class="section">
-    <h4>Ingredients</h4>
+      <div class="flex-align-center">
+      <h4>Ingredients</h4>
+        <span class="material-symbols-outlined">
+         cookie
+        </span>
+      </div>
       <ul>
         <li> 280 g de farine</li>
         <li> 2 oeufs</li>
@@ -53,7 +82,12 @@
     </div>
 
     <div class="section">
-      <h4>Préparation</h4>
+      <div class="flex-align-center">
+        <h4>Préparation</h4>
+        <span class="material-symbols-outlined">
+          skillet
+        </span>
+      </div>
       <ol>
         <li>
           <p><strong>Etape 1</strong> :
@@ -67,7 +101,8 @@
         </li>
         <li>
           <p><strong>Etape 3</strong> :
-            Verser le contenu du second saladier dans le premier et remuer jusqu'à obtenir une pâte plutôt lisse. Laissez tout de même quelques petits grumeaux.
+            Verser le contenu du second saladier dans le premier et remuer jusqu'à obtenir une pâte plutôt lisse.
+            Laissez tout de même quelques petits grumeaux.
           </p>
         </li>
         <li>
@@ -79,6 +114,51 @@
     </div>
   </div>
 
-  <!-- Todo : Liste de cartes représentant des recettes de muffins -->
+  <!-- Todo : Intégrer une map Google  -->
+  <div class="section">
+    <h3>Où trouver les meilleurs muffins à Bordeaux ?</h3>
+    <div class="flex-center">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d45264.1616522073!2d-0.6161643390695298!3d44.84172759999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sBordeaux%20muffin!5e0!3m2!1sfr!2sfr!4v1716736890818!5m2!1sfr!2sfr"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3>Les meilleurs recettes de muffin</h3>
+    <div class="muffin-card-container">
+      <div class="muffin-card">
+        <img src="images/production1.jpg" alt="Recette muffin à la banane" class="muffin-card-img">
+        <h4>Muffin à la banane</h4>
+        <p>Recette délicieuse</p>
+        <a href="https://www.marmiton.org/recettes/recette_muffins-a-la-banane_14745.aspx" target="_blank"
+          class="btn-primary">Voir plus</a>
+      </div>
+      <div class="muffin-card">
+        <img src="images/production2.jpg" alt="Recette muffin à la banane" class="muffin-card-img">
+        <h4>Muffin à la banane</h4>
+        <p>Recette délicieuse</p>
+        <a href="https://www.marmiton.org/recettes/recette_muffins-a-la-banane_14745.aspx" target="_blank"
+          class="btn-primary">Voir plus</a>
+      </div>
+      <div class="muffin-card">
+        <img src="images/production3.jpg" alt="Recette muffin à la banane" class="muffin-card-img">
+        <h4>Muffin à la banane</h4>
+        <p>Recette délicieuse</p>
+        <a href="https://www.marmiton.org/recettes/recette_muffins-a-la-banane_14745.aspx" target="_blank"
+          class="btn-primary">Voir plus</a>
+      </div>
+      <div class="muffin-card">
+        <img src="images/production1.jpg" alt="Recette muffin à la banane" class="muffin-card-img">
+        <h4>Muffin à la banane</h4>
+        <p>Recette délicieuse</p>
+        <a href="https://www.marmiton.org/recettes/recette_muffins-a-la-banane_14745.aspx" target="_blank"
+          class="btn-primary">Voir plus</a>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
