@@ -1,133 +1,60 @@
+# Jour 6 - Services
 
-# Jour 5 - Composant Card
+Dans le développement web, il est possible d'intégrer des services externes dans notre site, comme par exemple l'intégration d'une font personnalisée comme nous avons pu le faire précédemment avec Google Fonts.
 
-Nous allons améliorer notre recette de brownie en ajoutant un composant card qui nous permettra d'afficher les meilleures recettes autour du brownie.
+Google met également à disposition d'autres services qui peuvent être utilisés.
 
-Pour se faire, il faudra repartir de notre code de la dernière fois.
+## [Google Maps](https://www.google.fr/maps)
 
+Pour intégrer une map, il faut d'abord effectuer une recherche sur Google Maps, par exemple Bordeaux muffin pour avoir toutes les adresses proposant des muffins.
 
+![Intégration Google Maps](https://github.com/Rjumeau/muffin/blob/muffin-with-services/images-readme/google-map-integration-link.png)
 
-## La structure HTML d'une Card
+Ensuite, il faut cliquer sur les trois traits horizontaux en haut à gauche de l'écran puis :
 
-On peut imaginer une card qui se compose d'une image, d'un sous titre, d'un paragraphe et d'un lien. Le tout dans une boîte, donc une div.
+- Choisir Partager ou intégrer une carte
+- Sélectionner intégrer une carte
+- Copier le contenu HTML
+- Coller le contenu sur votre page web
 
+La balise <iframe> en HTML permet d'intégrer une autre page web à l'intérieur de la page actuelle. Pensez-y comme à une "fenêtre" dans votre page web qui montre le contenu d'une autre page web
 
+![Balise HTML générée](https://github.com/Rjumeau/muffin/blob/muffin-with-services/images-readme/google-map-integration.png)
 
+Il est possible de modifier le style de la map en lui ajoutant uen classe ou encore en inspectant la map depuis son navigateur, et en regardant le HTML généré pour manipuler les classes existantes.
 
-```html
-<div>
-  <img src="images/production1.jpg" alt="Recette">
-  <h4>Muffins moelleux à la banane</h4>
-  <p>Recette délicieuse</p>
-  <a href="https://www.marmiton.org/recettes/recette_brownie-fondant-chocolat-bananes_53461.aspx">Voir plus</a>
-</div>
-```
+## [Vidéo Youtube](https://www.youtube.com/)
 
+L'intégration d'une vidéo Youtube suit le même principe que Google Maps. Il suffit de choisir la vidéo que vous souhaitez intégrer et ensuite appuyer sur Share
 
-## Composant et CSS
+![Share vidéo youtube](https://github.com/Rjumeau/muffin/blob/muffin-with-services/images-readme/youtube-integration.png)
 
-Il faudra ensuite créer un nouveau composant card qui contiendra tout le style pour toutes nos card
+Il faudra ensuite :
 
-- Créer un fichier card.css dans le dossier components
-- Importer le composant le fichier style.css
+- Sélectionner "Embed"
+- Copier le code fourni (il est possible de sélectionner un moment précis où démarre la vidéo avec l'option Start at)
+- Coller le code dans votre fichier HTML à l'endroit souhaité
 
-Voici un exemple de css que l'on pourrait appliquer à notre card :
+![Résultat intégration vidéo youtube](https://github.com/Rjumeau/muffin/blob/muffin-with-services/images-readme/youtube-integration-result.png)
 
-Le HTML :
+## [Material Icons](https://fonts.google.com/icons?icon.size=8&icon.color=%23e8eaed)
 
+Google propose également une librairie d'icons gratuits, au même titre que ses fonts, via son service Material Icons.
 
-```html
-<div class="muffin-card">
-  <img src="images/production1.jpg" alt="Recette" class="muffin-card-img">
-  <h4>Muffins moelleux à la banane</h4>
-  <p>Recette délicieuse</p>
-  <a href="https://www.marmiton.org/recettes/recette_brownie-fondant-chocolat-bananes_53461.aspx" class="btn-primary">Voir plus</a>
-</div>
-```
-
-Et le CSS :
-
-
-```css
-.muffin-card {
-  /* Définir une largeur de la card */
-  width: 220px;
-  /* Couleur d'arrière plan */
-  background-color: white;
-  /* Rend la div flexible pour positionner les éléments enfants */
-  display: flex;
-  /* Met la direction en column (row donc horizontal par     défaut avec display flex) */
-  flex-direction: column;
-  /* Centre horizontalement les éléments enfants */
-  align-items: center;
-  /* Ajouter un espace intérieur de 20px sur le bas de la card */
-  padding-bottom: 20px;
-  /* Arrondi les angles de 5px */
-  border-radius: 5px;
-  /* Ajoute une ombre grise avec du flou sur la card */
-  box-shadow: 2px 2px 10px grey
-}
-
-.muffin-card-img {
-  /* Permet à l'image de prendre 100* de la largeur de la card */
-  width: 100%;
-  /* Hauteur de 150 px */
-  height: 150px;
-  /* Couvre entièrement la largeur dispo tout en maintenant les dimensions */
-  object-fit: cover;
-}
-```
-
-
-
-## Dupliquer les cards
-
-On a maintenant le design de notre card terminé, mais on aimerait afficher plusieurs cards. Si l'on duplique le code, on se rend compte que les cards s'affichent verticalement les unes après les autres.
-
-Il nous faut donc de nouveau positionner ces éléments dans une boîte parente et la rendre flexible. On l'appellera "muffin-card-container"
-
-HTML :
-
+Pour se faire, il faut d'abord intégrer le service dans notre page afin de pouvoir utiliser le style de chacun des icons avec cette ligne dans la balise <head> :
 
 ```html
-    <div class="muffin-card-container">
-      <div class="muffin-card">
-        <img src="images/production1.jpg" alt="Recette" class="muffin-card-img">
-        <h4>Muffins moelleux à la banane</h4>
-        <p>Recette délicieuse</p>
-        <a href="https://www.marmiton.org/recettes/recette_brownie-fondant-chocolat-bananes_53461.aspx" class="btn-primary">Voir plus</a>
-      </div>
-      <div class="muffin-card">
-        <img src="images/production2.jpg" alt="Recette" class="muffin-card-img">
-        <h4>Muffins au caramel fondant</h4>
-        <p>Recette délicieuse</p>
-        <a href="https://www.marmiton.org/recettes/recette_brownie-fondant-chocolat-bananes_53461.aspx"
-          class="btn-primary">Voir plus</a>
-      </div>
-      <div class="muffin-card">
-        <img src="images/production3.jpg" alt="Recette" class="muffin-card-img">
-        <h4>Muffins nature</h4>
-        <p>Recette délicieuse</p>
-        <a href="https://www.marmiton.org/recettes/recette_brownie-fondant-chocolat-bananes_53461.aspx"
-          class="btn-primary">Voir plus</a>
-      </div>
-      <div class="muffin-card">
-        <img src="images/production3.jpg" alt="Recette" class="muffin-card-img">
-        <h4>Muffins nature</h4>
-        <p>Recette délicieuse</p>
-        <a href="https://www.marmiton.org/recettes/recette_brownie-fondant-chocolat-bananes_53461.aspx"
-          class="btn-primary">Voir plus</a>
-      </div>
-    </div>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material +Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0"
+/>
 ```
 
-Et le CSS :
+Ensuite, il est possible de rechercher des icons selon un thème (en anglais), par exemple, ingredients.
 
+Une fois l'icon trouvé, il suffit de copier le code se trouvant en dessous de Inserting Icon et de l'intégrer dans votre page.
 
-```css
-.muffin-card-container {
-  display: flex;
-  /* Espace les éléments entre eux en laissant un espace à gauche et à droite à l'intérieur de la div*/
-  justify-content: space-around;
-}
-```
+![Lien icon material icon](https://github.com/Rjumeau/muffin/blob/muffin-with-services/images-readme/material-icons-integration.png)
+
+Les icons sont intégrés dans une balise <span>.
+Vous utilisez <span> lorsque vous souhaitez affecter une partie d'un texte avec un style particulier, sans perturber le flux du texte. Contrairement à une balise de niveau bloc comme <div>, une balise <span> ne provoque pas de retour à la ligne avant et après elle.
