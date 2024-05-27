@@ -41,7 +41,7 @@ Il faudra ensuite :
 
 Google propose également une librairie d'icons gratuits, au même titre que ses fonts, via son service Material Icons.
 
-Pour se faire, il faut d'abord intégrer le service dans notre page afin de pouvoir utiliser le style de chacun des icons avec cette ligne dans la balise <head> :
+Pour se faire, il faut d'abord intégrer le service dans notre page afin de pouvoir utiliser le style de chacun des icons avec cette ligne dans la balise head :
 
 ```html
 <link
@@ -56,5 +56,5 @@ Une fois l'icon trouvé, il suffit de copier le code se trouvant en dessous de I
 
 ![Lien icon material icon](https://github.com/Rjumeau/muffin/blob/muffin-with-services/images-readme/material-icons-integration.png)
 
-Les icons sont intégrés dans une balise <span>.
-Vous utilisez <span> lorsque vous souhaitez affecter une partie d'un texte avec un style particulier, sans perturber le flux du texte. Contrairement à une balise de niveau bloc comme <div>, une balise <span> ne provoque pas de retour à la ligne avant et après elle.
+Les icons sont intégrés dans une balise span.
+Vous utilisez span lorsque vous souhaitez affecter une partie d'un texte avec un style particulier, sans perturber le flux du texte. Contrairement à une balise de niveau bloc comme div, une balise span ne provoque pas de retour à la ligne avant et après elle.
