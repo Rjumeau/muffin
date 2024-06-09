@@ -3,6 +3,7 @@
 @import url(components/picture.css);
 @import url(components/navbar.css);
 @import url(components/card.css);
+@import url(components/footer.css);
 
 body {
 	margin: 0;
@@ -10,7 +11,6 @@ body {
 	background: #ee9ca7;
   background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);
   background: linear-gradient(to right, #ffdde1, #ee9ca7);
-  padding-bottom: 50px;
 }
 
 
