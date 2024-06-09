@@ -3,7 +3,6 @@
 @import url(components/picture.css);
 @import url(components/navbar.css);
 @import url(components/card.css);
-@import url(components/map.css);
 
 body {
 	margin: 0;
@@ -34,7 +33,7 @@ p {
 	text-align: center;
 }
 
-.flex-center {
+.flex-justify-center {
   display: flex;
   justify-content: center;
 }
@@ -42,5 +41,5 @@ p {
 .flex-align-center {
   display: flex;
   align-items: center;
-  gap: 10px
+  gap: 20px;
 }
